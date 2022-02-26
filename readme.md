@@ -4,7 +4,7 @@
 
 # Project Description:
 
-The project is particularly aimed to create an all-in-one solution for the problems a student faces in his/her college. This project has been initiated as a prototype for the hackathon – HackTU. As the prototype had to be created under a time constraint, we have used different sources(Mentioned in later part of the doc.) to build it but the all the project ideation is our own.
+<p/>The project is particularly aimed to create an all-in-one solution for the problems a student faces in his/her college. This project has been initiated as a prototype for the hackathon – HackTU. As the prototype had to be created under a time constraint, we have used different sources(Mentioned in later part of the doc.) to build it but the all the project ideation is our own. 
 The main problems we tried to address via it are :
 
 ## 1. Lack of study material:
@@ -31,3 +31,4 @@ The main problems we tried to address via it are :
 ## 6. Miscellaneous:
 
     We are also trying to cover certain issues like contacting the teachers directly, seeking help from your peer/seniors and selling or renting out your stuff inside our project too.
+<p/>
