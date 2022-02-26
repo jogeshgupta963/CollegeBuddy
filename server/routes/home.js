@@ -16,5 +16,9 @@ homeRouter
     .get(jwtVerify, (req, res) => {
         res.sendFile(path.join(__dirname, "../../client/activities.html"))
     })
+homeRouter.route('/buy_sell')
+    .get(jwtVerify, (req, res) => {
+        res.sendFile(path.join(__dirname, "../../client/buy_sell.html"))
+    })
 
 module.exports = homeRouter;
