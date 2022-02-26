@@ -32,7 +32,7 @@ register.addEventListener("click", async (e) => {
     const password = document.querySelector('.password-register').value
     let clg = email.split("@")[1].split[0];
     const data = await axios.post("/api/v1/user", { name, email, password, clg })
-    console.log(data)
+    window.location.href = "/api/v1/home"
 
 })
 
