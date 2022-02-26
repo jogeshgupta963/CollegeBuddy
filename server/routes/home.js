@@ -11,5 +11,10 @@ homeRouter
         // res.sendFile("C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\home.html")
         res.sendFile(path.join(__dirname, "../../client/home.html"))
     })
+homeRouter
+    .route('/activities')
+    .get(jwtVerify, (req, res) => {
+        res.sendFile(path.join(__dirname, "../../client/activities.html"))
+    })
 
 module.exports = homeRouter;

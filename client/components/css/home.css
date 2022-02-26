@@ -60,7 +60,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  transform: translate(3%, 0);
+  /* transform: translate(3%, 0); */
   margin: 0 auto;
 }
 
@@ -91,4 +91,29 @@ body {
   backdrop-filter: blur(8.1px);
   -webkit-backdrop-filter: blur(8.1px);
   border: 1px solid rgba(255, 255, 255, 0.29);
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer i {
+  color: red;
+}
+
+footer a {
+  color: #3c97bf;
+  text-decoration: none;
 }
