@@ -14,6 +14,12 @@ login.addEventListener("click", async (e) => {
     const password = document.querySelector(".password-login").value
 
     const data = await axios.post("/api/v1/auth", { email, password })
+    if (data.data == "logged in") {
+        window.location.href = "/api/v1/home"
+        return;
+    }
+    const err = document.querySelector(".incorrect-pass")
+    err.innerText = "incorrect email or password";
     console.log(data);
 })
 

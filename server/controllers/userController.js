@@ -14,7 +14,7 @@ require("dotenv").config()
 function getSignup(req, res) {
 
     // res.sendFile("C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\index.html");
-    res.sendFile(path.join())
+    res.sendFile(path.join(__dirname, "../../client/index.html"))
 }
 
 
@@ -66,7 +66,7 @@ async function postSignup(req, res) {
         });
 
         //creating jwt
-        const JWT = jwt.sign({ payload: user._id }, process.env.JWT_SECRET, { expiresIn: 60 })
+        const JWT = jwt.sign({ payload: user._id }, process.env.JWT_SECRET, { expiresIn: 6000 })
 
         res.cookie("JWT", JWT, { httpOnly: true })
         return res.status(200).json("User Registered")

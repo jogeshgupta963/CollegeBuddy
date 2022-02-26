@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
+const path = require("path");
 
 const dbConnect = require("./server/dbConnect/connect");
 
@@ -11,22 +12,40 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors());
+// app.use(
+//   "/css",
+//   express.static(
+//     "C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\components\\css"
+//   )
+// );
 app.use(
   "/css",
   express.static(
-    "C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\components\\css"
+    path.join(__dirname, "/client/components/css")
   )
 );
 app.use(
   "/js",
   express.static(
-    "C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\components\\js"
+    path.join(__dirname, "/client/components/js")
   )
 );
+// app.use(
+//   "/js",
+//   express.static(
+//     "C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\components\\js"
+//   )
+// );
+// app.use(
+//   "/img",
+//   express.static(
+//     "C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\images"
+//   )
+// );
 app.use(
   "/img",
   express.static(
-    "C:\\Users\\JOGESH\\OneDrive\\Documents\\GitHub\\hackTu\\client\\images"
+    path.join(__dirname, "/client/images")
   )
 );
 
