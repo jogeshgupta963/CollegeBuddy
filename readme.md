@@ -37,7 +37,8 @@ The main problems we tried to address via it are :
    <p> We are also trying to cover certain issues like contacting the teachers directly, seeking help from your peer/seniors and selling or renting out your stuff inside our project too. <p>
    
   <br/>
-## Resources:
+ ## Resouces:
+  <br/>
    1.)Stack overflow <br/>
    2.)mdn docs and w3 schools </br>
    3.) code pen </br>
