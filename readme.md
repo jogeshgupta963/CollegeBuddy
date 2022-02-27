@@ -13,7 +13,7 @@ The main problems we tried to address via it are :
 
 ## 2. Hostel room allocation:
 
-     <p> The major issues which students face when they come to college is hostel room allocation. We have integrated a platform where students interesting in swapping their rooms/hostels can find the person with similar needs in a hassle-free way.<p/>
+     <p> The major issues which students face when they come to college is hostel room allocation. We have integrated a platform where students interesting in swapping their rooms/hostels can find the person with similar needs in a hassle-free way. <p/>
 
 ## 3. Lost and found stuff:
 
@@ -21,8 +21,8 @@ The main problems we tried to address via it are :
 
 ## 4. Food delivery:
 
-    <p>It is very tedious to keep list of all the food shops and cafes along with their contacts.
-    We are trying to cover all those shops under a specific section of our project along with their menu and contacts.<p/>
+    <p> It is very tedious to keep list of all the food shops and cafes along with their contacts.
+    We are trying to cover all those shops under a specific section of our project along with their menu and contacts. <p/>
 
 ## 5. Events:
 
@@ -31,4 +31,11 @@ The main problems we tried to address via it are :
 ## 6. Miscellaneous:
 
    <p> We are also trying to cover certain issues like contacting the teachers directly, seeking help from your peer/seniors and selling or renting out your stuff inside our project too. <p/>
+   
+   Resources:
+   1.)Stack overflow <br/>
+   2.)mdn docs and w3 schools </br>
+   3.) code pen </br>
+   
+   
 
