@@ -62,13 +62,17 @@ app.use("/api/v1/home", homeRouter);
 app.use("/api/v1/profile", profileRouter);
 app.use("/api/v1/getname", nameRouter);
 
-//connecting database
-(async function () {
-  try {
-    await dbConnect(process.env.mongoUri);
-    console.log("db Connected");
-    app.listen(80, () => console.log("server Started"));
-  } catch (error) {
-    console.log(error.message);
-  }
-})();
+
+app.get('/', (req, res) => {
+  res.redirect('/api/v1/user');
+})
+  //connecting database
+  (async function () {
+    try {
+      await dbConnect(process.env.mongoUri);
+      console.log("db Connected");
+      app.listen(process.enc.port || 80, () => console.log("server Started"));
+    } catch (error) {
+      console.log(error.message);
+    }
+  })();
