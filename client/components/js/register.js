@@ -7,7 +7,7 @@ const register = document.querySelector('.btn-register');
 const login = document.querySelector(".btn-login")
 
 //login
-// console.log(login)
+
 login.addEventListener("click", async (e) => {
     e.preventDefault();
     const email = document.querySelector(".email-login").value;

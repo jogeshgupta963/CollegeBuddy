@@ -14,7 +14,9 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
+    <nav class="nabar"></nav>
     <section class="head">
       <div class="bg"></div>
       <div class="text-container">
@@ -81,5 +83,13 @@
     <footer>
       <p>Created with love <i class="fa fa-heart"></i> by AltF4</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      window.addEventListener("load", async () => {
+        let name = await axios.get("/api/v1/getname");
+        console.log(name);
+        document.querySelector(".nabar").innerText = "Welcome " + name.data;
+      });
+    </script>
   </body>
 </html>

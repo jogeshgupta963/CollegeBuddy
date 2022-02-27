@@ -54,11 +54,13 @@ const userRouter = require("./server/routes/user");
 const homeRouter = require("./server/routes/home");
 const authRouter = require("./server/routes/auth");
 const profileRouter = require("./server/routes/profile");
+const nameRouter = require("./server/routes/getName");
 
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/home", homeRouter);
 app.use("/api/v1/profile", profileRouter);
+app.use("/api/v1/getname", nameRouter);
 
 //connecting database
 (async function () {

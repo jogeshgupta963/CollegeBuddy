@@ -13,7 +13,10 @@ body {
   background-color: #ffcfdf;
   background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
 }
-
+.nabar {
+  padding: 5px 5px;
+  text-align: center;
+}
 .head {
   /* background-image: url("../../images/bg.jpeg"); */
 
@@ -92,7 +95,10 @@ body {
   -webkit-backdrop-filter: blur(8.1px);
   border: 1px solid rgba(255, 255, 255, 0.29);
 }
-
+.card:hover {
+  position: relative;
+  /* top: 0.1px; */
+}
 footer {
   background-color: #222;
   color: #fff;

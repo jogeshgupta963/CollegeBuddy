@@ -66,7 +66,7 @@ async function postSignup(req, res) {
         });
 
         //creating jwt
-        const JWT = jwt.sign({ payload: user._id }, process.env.JWT_SECRET, { expiresIn: 6000 })
+        const JWT = jwt.sign({ payload: user._id }, process.env.JWT_SECRET, { expiresIn: 60 * 60 })
 
         res.cookie("JWT", JWT, { httpOnly: true })
         return res.status(200).json("User Registered")
