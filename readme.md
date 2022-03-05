@@ -2,7 +2,7 @@
 
 ## Solving problems faced by college students
 
-### Made in hackathon,HackTu and Hacklipse
+### Made in hackathon,HackTu and Hacklipse(2nd runner up)
 
 # Project Description:
 
